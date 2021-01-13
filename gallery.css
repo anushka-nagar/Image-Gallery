@@ -1,12 +1,16 @@
 .title{
-    position: relative;
-    margin-top: -50%;
+    position: absolute;
+    top: 15%;
+    left: 42%;
     color: azure;
     text-align: center;
     display: block;
 }
 .des{
-    position: relative;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    color: azure;
     color: azure;
     text-align: center;
     display: block;
@@ -17,17 +21,21 @@
 }
 
 .viewbtn{
-    position: relative;
+    position: absolute;
+    top: 55%;
+    left: 35%;
     color: azure;
-    margin-left: 35%;
+    color: azure;
     background-color: seagreen;
     border-radius: 5px;
 }
 
 .sharebtn{
-    position: relative;
+    position: absolute;
+    top: 55%;
+    left: 55%;
     color: azure;
-    margin-left: 7%;
+    color: azure;
     background-color: seagreen; 
     border-radius: 20%;   
 }
