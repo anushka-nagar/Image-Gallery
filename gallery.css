@@ -1,0 +1,42 @@
+.title{
+    position: relative;
+    margin-top: -50%;
+    color: azure;
+    text-align: center;
+    display: block;
+}
+.des{
+    position: relative;
+    color: azure;
+    text-align: center;
+    display: block;
+}
+
+.image{
+    border-radius: 10px;
+}
+
+.viewbtn{
+    position: relative;
+    color: azure;
+    margin-left: 35%;
+    background-color: seagreen;
+    border-radius: 5px;
+}
+
+.sharebtn{
+    position: relative;
+    color: azure;
+    margin-left: 7%;
+    background-color: seagreen; 
+    border-radius: 20%;   
+}
+
+.caption{
+    display: inline;
+    visibility: hidden;
+}
+
+.component{
+    margin-bottom: 5%;
+}
