@@ -21,72 +21,104 @@
                bg.style.opacity= "1";
                element1.style.visibility= "hidden";
             }
+
+            function zoomin(imgID){
+                var image = document.getElementById(imgID);
+                image.style.transform= "scale(1.1)";
+                image.style.opacity= "1";
+            }
+
+            function zoomout(imgID){
+                var image = document.getElementById(imgID);
+                image.style.transform= "scale(1)";
+                image.style.opacity= "0.8";
+            }
         </script>
     </head>
     <body>
         <div class="container" id="gallery">
             <div class="row mt-5">
                 <!--1-->
-                <div class="col-md-4 component">
+                <div class="col-md-4 col-sm-12 component">
                     <img class="img-fluid image" id="photo1" src="image.jpg" onmouseover="show('cap1','photo1')" onmouseout="hide('cap1','photo1')">
                     <div class="caption" id="cap1">
                         <h2 class="title" id="t1">Title</h2>
                         <p class="des" id="d1">Description</p>
-                        <button class="btn viewbtn" onmouseover="show('cap1','photo1')"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn viewbtn"  onmouseover="show('cap1','photo1'), zoomin('photo1')" onmouseout="zoomout('photo1')"><i class="fa fa-eye" aria-hidden="true"></i></button>
                         <button class="btn sharebtn" onmouseover="show('cap1','photo1')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
                     </div>
                 </div>
                  <!--1-->
-                 <div class="col-md-4 component">
+                 <div class="col-md-4 col-sm-12 component">
                     <img class="img-fluid image" id="photo2" src="image.jpg" onmouseover="show('cap2','photo2')" onmouseout="hide('cap2','photo2')">
                     <div class="caption" id="cap2">
                         <h2 class="title" id="t2">Title</h2>
                         <p class="des" id="d2">Description</p>
-                        <button class="btn viewbtn" onmouseover="show('cap2','photo2')"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn viewbtn" onmouseover="show('cap2','photo2'), zoomin('photo2')" onmouseout="zoomout('photo2')"><i class="fa fa-eye" aria-hidden="true"></i></button>
                         <button class="btn sharebtn" onmouseover="show('cap2','photo2')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
                     </div>
                 </div>
                  <!--1-->
-                 <div class="col-md-4 component">
+                 <div class="col-md-4 col-sm-12 component">
                     <img class="img-fluid image" id="photo3" src="image.jpg" onmouseover="show('cap3','photo3')" onmouseout="hide('cap3','photo3')">
                     <div class="caption" id="cap3">
                         <h2 class="title" id="t3">Title</h2>
                         <p class="des" id="d3">Description</p>
-                        <button class="btn viewbtn" onmouseover="show('cap3','photo3')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn viewbtn" onmouseover="show('cap3','photo3'), zoomin('photo3')" onmouseout="zoomout('photo3')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
                         <button class="btn sharebtn" onmouseover="show('cap3','photo3')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
                     </div>
                 </div>
                  <!--1-->
-                 <div class="col-md-4 component">
+                 <div class="col-md-4 col-sm-12 component">
                     <img class="img-fluid image" id="photo4" src="image.jpg" onmouseover="show('cap4','photo4')" onmouseout="hide('cap4','photo4')">
                     <div class="caption" id="cap4">
                         <h2 class="title" id="t4">Title</h2>
                         <p class="des" id="d4">Description</p>
-                        <button class="btn viewbtn" onmouseover="show('cap4','photo4')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn viewbtn" onmouseover="show('cap4','photo4')" onclick="openModal('photo4')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
                         <button class="btn sharebtn" onmouseover="show('cap4','photo4')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <!--1-->
-                <div class="col-md-4 component">
+                <div class="col-md-4 col-sm-12 component">
                     <img class="img-fluid image" id="photo5" src="image.jpg" onmouseover="show('cap5','photo5')" onmouseout="hide('cap5','photo5')">
                     <div class="caption" id="cap5">
                         <h2 class="title" id="t5">Title</h2>
                         <p class="des" id="d5">Description</p>
-                        <button class="btn viewbtn" onmouseover="show('cap5','photo5')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn viewbtn" onmouseover="show('cap5','photo5')" onclick="openModal('photo4')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
                         <button class="btn sharebtn" onmouseover="show('cap5','photo5')"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
                     </div>
                 </div>
                  <!--1-->
-                 <div class="col-md-4 component">
+                 <div class="col-md-4 col-sm-12 component">
                     <img class="img-fluid image" id="photo6" src="image.jpg" onmouseover="show('cap6','photo6')" onmouseout="hide('cap6','photo6')">
                     <div class="caption" id="cap6">
                         <h2 class="title" id="t6">Title</h2>
                         <p class="des" id="d6">Description</p>
-                        <button class="btn viewbtn" onmouseover="show('cap6','photo6')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button class="btn viewbtn" onmouseover="show('cap6','photo6')"onclick="openModal('photo4')" ><i class="fa fa-eye" aria-hidden="true"></i></button>
                         <button class="btn sharebtn" onmouseover="show('cap6','photo6')" ><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
                     </div>
                 </div>
+            </div><!--row end-->
+            <div id="modal">
+                <button id="close" onclick="closeModal()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <img class="modal-content" id="modal-img">
             </div>
-        </div>
+
+        </div><!--Container end-->
+
+        <script>
+            let modal = document.getElementById("modal");
+            var modalImg = document.getElementById("modal-img");
+
+            openModal = function(image){
+            modal.style.display = "block";
+            img= document.getElementById(image);
+            modalImg.src = img.src;
+            }
+
+            closeModal= function(){
+            modal.style.display = "none";
+            }
+        </script>
     </body>
 </html>
